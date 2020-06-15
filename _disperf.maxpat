@@ -6882,7 +6882,7 @@
 													"numoutlets" : 1,
 													"outlettype" : [ "" ],
 													"patching_rect" : [ 355.0, 365.0, 50.0, 62.0 ],
-													"text" : "dictionary u912003034"
+													"text" : "dictionary u788003205"
 												}
 
 											}
@@ -13424,13 +13424,13 @@
 					"presentation_rect" : [ 3.5, 520.75927734375, 74.555557250976562, 27.5 ],
 					"saved_attribute_attributes" : 					{
 						"valueof" : 						{
+							"parameter_longname" : "live.text",
+							"parameter_initial_enable" : 1,
 							"parameter_mmax" : 1.0,
 							"parameter_initial" : [ 1 ],
 							"parameter_shortname" : "live.text",
 							"parameter_enum" : [ "Menubar_Off", "Manubar_On" ],
-							"parameter_type" : 1,
-							"parameter_longname" : "live.text",
-							"parameter_initial_enable" : 1
+							"parameter_type" : 1
 						}
 
 					}

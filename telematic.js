@@ -52,13 +52,13 @@ max.post(`Loaded the ${path.basename(__filename)} script`);
 
 
 // the broker.js script is hosted at this url
-var brokerHost = ["http://fathomless-savannah-66140.herokuapp.com/"];
+var brokerHost = ["https://disperf-broker.herokuapp.com/"];
 
 // if client switched to a local or other broker host, update that here:
 max.addHandler('brokerHost', (hostIP)=>{
   // if client switched back to heroku app, then reset it
   if(hostIP === 'heroku'){
-    brokerHost = ["http://fathomless-savannah-66140.herokuapp.com/"];
+    brokerHost = ["https://disperf-broker.herokuapp.com/"];
   } else {
     brokerHost = hostIP
 

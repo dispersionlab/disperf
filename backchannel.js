@@ -25,22 +25,6 @@ const rwsOptions = {
 }
 
 
-// const hookcord = require('hookcord');
-
-// function discord(msg){
-
-//   payload = {
-//     content: msg
-//   }
-//   let Hook = new hookcord.Hook()
-//   .setLink('https://discordapp.com/api/webhooks/664564721676189696/6UhiqCWuMNXS-mQ3Mffb4UvQ4BIdDeiIOSe3BbMiYXnQXSVIjiDv04yMEr5-CW_7EuS4')
-//   .setPayload(payload)
-//   .fire()
-//   .then(function(response) {})
-//   .catch(function(e) {})
-// }
-
-
 process.env.PATH = [process.env.PATH, "/usr/local/bin"].join(":");
 // max.post(__dirname, process.env.PATH, '\n')
 // console_jackdmp === 1
@@ -77,8 +61,8 @@ function wsConnect(){
     brokerHost = '127.0.0.1'
     ws = new rws('ws://127.0.0.1:8080', [], rwsOptions);
   } else {
-    brokerHost = ["http://fathomless-savannah-66140.herokuapp.com/"];
-    ws = new rws('ws://fathomless-savannah-66140.herokuapp.com/8080', [], rwsOptions);
+    brokerHost = ["https://disperf-broker.herokuapp.com/"];
+    ws = new rws('ws://disperf-broker.herokuapp.com/8080', [], rwsOptions);
   }
 }
 wsConnect()
