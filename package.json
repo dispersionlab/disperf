@@ -17,6 +17,22 @@
   },
   "homepage": "https://github.com/dispersionlab/disperf#readme",
   "dependencies": {
-    "jest": "^26.0.1"
+    "applescript": "^1.0.0",
+    "bytes-to-x": "^1.0.0",
+    "clipboardy": "^2.3.0",
+    "express": "^4.17.1",
+    "find-process": "^1.4.3",
+    "hookcord": "^2.0.2",
+    "ip": "^1.1.5",
+    "is-reachable": "^4.0.0",
+    "jest": "^26.0.1",
+    "lodash": "^4.17.15",
+    "moment": "^2.26.0",
+    "new-github-issue-url": "^0.2.1",
+    "opn": "^6.0.0",
+    "path": "^0.12.7",
+    "reconnecting-websocket": "^4.4.0",
+    "username": "^5.1.0",
+    "ws": "^7.3.0"
   }
 }

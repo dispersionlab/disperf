@@ -1,0 +1,80 @@
+{
+	"mp": {
+		"port": 5201,
+		"ip": "130.63.221.204",
+		"limit": 1000,
+		"interval": 0.5,
+		"repeats": 2,
+		"scheduler": 1,
+		"maxError": 10,
+		"incrementDuration": 4,
+		"directionality": 0,
+		"increment": 50,
+		"bandwidth": 50,
+		"iperf3": {
+			"version": "iperf 3.7 (cJSON 1.5.2)",
+			"server": null,
+			"client": null
+		}
+	},
+	"default": {
+		"port": 5201,
+		"ip": "130.63.108.239",
+		"limit": 1000,
+		"interval": 30,
+		"repeats": 48,
+		"scheduler": 0,
+		"maxError": 10,
+		"incrementDuration": 3,
+		"directionality": 0,
+		"increment": 20,
+		"bandwidth": 10,
+		"iperf3": {
+			"version": "iperf 3.7 (cJSON 1.5.2)",
+			"activeState": null,
+			"server": null,
+			"client": null
+		}
+	},
+	"dispersion_noise": {
+		"port": 5201,
+		"ip": "130.63.219.221",
+		"limit": 1000,
+		"interval": 30,
+		"repeats": 48,
+		"scheduler": 0,
+		"maxError": 10,
+		"incrementDuration": 3,
+		"directionality": 0,
+		"increment": 20,
+		"bandwidth": 10,
+		"iperf3": {
+			"version": "iperf 3.7 (cJSON 1.5.2)",
+			"server": null,
+			"client": null
+		}
+	},
+	"Paris_FR_6": {
+		"scheduler": 0,
+		"port": 5206
+	},
+	"dispersion_vader": {
+		"port": 5201,
+		"ip": "130.63.108.239",
+		"limit": 1000,
+		"interval": 30,
+		"repeats": 48,
+		"scheduler": 0,
+		"maxError": 10,
+		"incrementDuration": 3,
+		"directionality": 0,
+		"increment": 20,
+		"bandwidth": 10,
+		"iperf3": {
+			"version": "iperf 3.7 (cJSON 1.5.2)",
+			"activeState": null,
+			"server": null,
+			"client": null
+		}
+	}
+}

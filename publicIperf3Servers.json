@@ -1,0 +1,31 @@
+{
+	"Fremont_CA":{"ip":"iperf.scottlinux.com", "port": 5201, "protocol":"TCP/UDP"},
+	"Paris_FR_1":{"ip":"ping.online.net", "port": 5201, "protocol":"TCP/UDP"},
+	"Paris_FR_2":{"ip":"ping.online.net", "port": 5202, "protocol":"TCP/UDP"},
+	"Paris_FR_3":{"ip":"ping.online.net", "port": 5203, "protocol":"TCP/UDP"},
+	"Paris_FR_4":{"ip":"ping.online.net", "port": 5204, "protocol":"TCP/UDP"},
+	"Paris_FR_5":{"ip":"ping.online.net", "port": 5205, "protocol":"TCP/UDP"},
+	"Paris_FR_6":{"ip":"ping.online.net", "port": 5206, "protocol":"TCP/UDP"},
+	"Paris_FR_7":{"ip":"ping.online.net", "port": 5207, "protocol":"TCP/UDP"},
+	"Paris_FR_8":{"ip":"ping.online.net", "port": 5208, "protocol":"TCP/UDP"},
+	"Paris_FR_9":{"ip":"ping.online.net", "port": 5209, "protocol":"TCP/UDP"},
+	"Hamburg_GR_1":{"ip":"speedtest.wtnet.de", "port": 5201, "protocol":"TCP/UDP"},
+	"Hamburg_GR_2":{"ip":"speedtest.wtnet.de", "port": 5202, "protocol":"TCP/UDP"},
+	"Hamburg_GR_3":{"ip":"speedtest.wtnet.de", "port": 5203, "protocol":"TCP/UDP"},
+	"Hamburg_GR_4":{"ip":"speedtest.wtnet.de", "port": 5204, "protocol":"TCP/UDP"},
+	"Hamburg_GR_5":{"ip":"speedtest.wtnet.de", "port": 5205, "protocol":"TCP/UDP"},
+	"Hamburg_GR_6":{"ip":"speedtest.wtnet.de", "port": 5206, "protocol":"TCP/UDP"},
+	"Hamburg_GR_7":{"ip":"speedtest.wtnet.de", "port": 5207, "protocol":"TCP/UDP"},
+	"Hamburg_GR_8":{"ip":"speedtest.wtnet.de", "port": 5208, "protocol":"TCP/UDP"},
+	"Hamburg_GR_9":{"ip":"speedtest.wtnet.de", "port": 5209, "protocol":"TCP/UDP"}
+
+
+
+
+
+
+
+
+
+
+}
