@@ -1,0 +1,22 @@
+{
+  "name": "disperf",
+  "version": "2.0.0",
+  "description": "disperf: create, manage connections and testing for telematic concerts",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/dispersionlab/disperf.git"
+  },
+  "author": "michael palumbo, doug van nort",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/dispersionlab/disperf/issues"
+  },
+  "homepage": "https://github.com/dispersionlab/disperf#readme",
+  "dependencies": {
+    "jest": "^26.0.1"
+  }
+}
