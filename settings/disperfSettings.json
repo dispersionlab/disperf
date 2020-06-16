@@ -76,5 +76,9 @@
 			"server": null,
 			"client": null
 		}
+	},
+	"Paris_FR_1": {
+		"port": 5201,
+		"scheduler": 0
 	}
 }
