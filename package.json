@@ -33,6 +33,6 @@
     "path": "^0.12.7",
     "reconnecting-websocket": "^4.4.0",
     "username": "^5.1.0",
-    "ws": "^7.3.0"
+    "ws": "^7.4.6"
   }
 }
