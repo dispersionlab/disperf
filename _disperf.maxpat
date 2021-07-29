@@ -1135,9 +1135,9 @@
 									"maxclass" : "newobj",
 									"numinlets" : 1,
 									"numoutlets" : 1,
-									"outlettype" : [ "README" ],
-									"patching_rect" : [ 113.5, 70.0, 67.0, 22.0 ],
-									"text" : "t README"
+									"outlettype" : [ "https://dispersionlab.github.io/disperf" ],
+									"patching_rect" : [ 113.5, 97.0, 210.0, 22.0 ],
+									"text" : "t https://dispersionlab.github.io/disperf"
 								}
 
 							}
@@ -1156,7 +1156,7 @@
 , 							{
 								"box" : 								{
 									"id" : "obj-21",
-									"items" : [ "home", ",", "install", ",", "report", "a", "bug", ",", "request", "a", "feature", ",", "testing", ",", "production" ],
+									"items" : [ "home", ",", "install", ",", "report", "a", "bug", ",", "request", "a", "feature", ",", "testing", ",", "audio", ",", "system", ",", "developer", ",", "production" ],
 									"maxclass" : "umenu",
 									"numinlets" : 1,
 									"numoutlets" : 3,
@@ -1188,7 +1188,7 @@
 									"numinlets" : 1,
 									"numoutlets" : 2,
 									"outlettype" : [ "", "front" ],
-									"patching_rect" : [ 396.0, 103.9005126953125, 311.0, 22.0 ],
+									"patching_rect" : [ 409.0, 103.9005126953125, 311.0, 22.0 ],
 									"text" : "t s front"
 								}
 
@@ -1200,7 +1200,7 @@
 									"numinlets" : 1,
 									"numoutlets" : 1,
 									"outlettype" : [ "" ],
-									"patching_rect" : [ 396.0, 179.0, 259.0, 22.0 ],
+									"patching_rect" : [ 409.0, 179.0, 259.0, 22.0 ],
 									"text" : "sprintf https://dispersionlab.github.io/disperf/%s"
 								}
 
@@ -1224,7 +1224,7 @@
 									"numinlets" : 0,
 									"numoutlets" : 1,
 									"outlettype" : [ "" ],
-									"patching_rect" : [ 396.0, 65.9005126953125, 141.0, 22.0 ],
+									"patching_rect" : [ 409.0, 65.9005126953125, 141.0, 22.0 ],
 									"text" : "receive loadManualPage"
 								}
 
@@ -1337,7 +1337,7 @@
 									"presentation" : 1,
 									"presentation_rect" : [ 6.0, 58.0, 1175.0, 808.0 ],
 									"rendermode" : 1,
-									"url" : "https://dispersionlab.github.io/disperf/install"
+									"url" : "https://dispersionlab.github.io/disperf/production"
 								}
 
 							}
@@ -1374,7 +1374,7 @@
 , 							{
 								"patchline" : 								{
 									"destination" : [ "obj-7", 0 ],
-									"midpoints" : [ 697.5, 207.0, 754.5, 207.0 ],
+									"midpoints" : [ 710.5, 207.0, 754.5, 207.0 ],
 									"source" : [ "obj-18", 1 ]
 								}
 
@@ -1396,7 +1396,7 @@
 , 							{
 								"patchline" : 								{
 									"destination" : [ "obj-14", 0 ],
-									"midpoints" : [ 356.0, 170.5, 405.5, 170.5 ],
+									"midpoints" : [ 356.0, 135.5, 418.5, 135.5 ],
 									"source" : [ "obj-22", 3 ]
 								}
 
@@ -1425,8 +1425,8 @@
 							}
 , 							{
 								"patchline" : 								{
-									"destination" : [ "obj-14", 0 ],
-									"midpoints" : [ 123.0, 135.0, 405.5, 135.0 ],
+									"destination" : [ "obj-13", 0 ],
+									"midpoints" : [ 123.0, 146.0, 405.5, 146.0 ],
 									"source" : [ "obj-23", 0 ]
 								}
 
@@ -1434,7 +1434,7 @@
 , 							{
 								"patchline" : 								{
 									"destination" : [ "obj-14", 0 ],
-									"midpoints" : [ 200.666666666666686, 135.0, 405.5, 135.0 ],
+									"midpoints" : [ 200.666666666666686, 135.0, 418.5, 135.0 ],
 									"source" : [ "obj-24", 0 ]
 								}
 
@@ -2297,7 +2297,6 @@
 										"style" : "",
 										"subpatcher_template" : "",
 										"assistshowspatchername" : 0,
-										"visible" : 1,
 										"boxes" : [ 											{
 												"box" : 												{
 													"id" : "obj-95",
@@ -7090,7 +7089,6 @@
 										"style" : "",
 										"subpatcher_template" : "",
 										"assistshowspatchername" : 0,
-										"visible" : 1,
 										"boxes" : [ 											{
 												"box" : 												{
 													"id" : "obj-106",

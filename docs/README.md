@@ -10,5 +10,6 @@ For more details on each of the menubar items, select the corresponding link bel
 
 [Testing](https://dispersionlab.github.io/disperf/testing)
 
+[Audio](https://dispersionlab.github.io/disperf/audio)
 
 [Production](https://dispersionlab.github.io/disperf/production)
