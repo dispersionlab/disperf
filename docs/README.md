@@ -6,6 +6,8 @@
 
 Disperf's features and settings can be accessed from its menubar. 
 
+For more details on each of the menubar items, select the corresponding link below.  
+
 [Testing](https://dispersionlab.github.io/disperf/testing)
 
 
