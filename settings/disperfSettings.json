@@ -18,12 +18,12 @@
 		}
 	},
 	"default": {
-		"port": 5201,
+		"port": 5202,
 		"ip": "130.63.108.239",
 		"limit": 1000,
 		"interval": 30,
 		"repeats": 48,
-		"scheduler": 0,
+		"scheduler": 1,
 		"maxError": 10,
 		"incrementDuration": 3,
 		"directionality": 0,
