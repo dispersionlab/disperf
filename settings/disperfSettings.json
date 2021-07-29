@@ -78,7 +78,13 @@
 		}
 	},
 	"Paris_FR_1": {
-		"port": 5201,
-		"scheduler": 0
+		"port": 5209,
+		"scheduler": 1
+	},
+	"Paris_FR_9": {
+		"port": 5209
+	},
+	"Paris_FR_5": {
+		"port": 5209
 	}
 }
