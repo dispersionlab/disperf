@@ -10,7 +10,7 @@
 		}
 ,
 		"classnamespace" : "box",
-		"rect" : [ 370.0, 503.0, 731.0, 507.0 ],
+		"rect" : [ 52.0, 79.0, 731.0, 507.0 ],
 		"bglocked" : 0,
 		"openinpresentation" : 1,
 		"default_fontsize" : 12.0,
@@ -1389,7 +1389,7 @@
 						}
 ,
 						"classnamespace" : "box",
-						"rect" : [ 59.0, 104.0, 640.0, 480.0 ],
+						"rect" : [ 59.0, 104.0, 638.0, 508.0 ],
 						"bglocked" : 0,
 						"openinpresentation" : 1,
 						"default_fontsize" : 12.0,
@@ -1417,6 +1417,7 @@
 						"style" : "",
 						"subpatcher_template" : "",
 						"assistshowspatchername" : 0,
+						"visible" : 1,
 						"boxes" : [ 							{
 								"box" : 								{
 									"id" : "obj-43",
@@ -1470,15 +1471,15 @@
 , 							{
 								"box" : 								{
 									"id" : "obj-39",
-									"linecount" : 7,
+									"linecount" : 3,
 									"maxclass" : "comment",
 									"numinlets" : 1,
 									"numoutlets" : 0,
-									"patching_rect" : [ 396.0, 42.0, 153.0, 100.0 ],
+									"patching_rect" : [ 396.0, 42.0, 153.0, 47.0 ],
 									"presentation" : 1,
-									"presentation_linecount" : 4,
-									"presentation_rect" : [ 369.0, 6.0, 237.0, 60.0 ],
-									"text" : "*note* please make sure you are signed in to GitHub first, and that someone at the dispersion lab has added your account as an outside collaborator"
+									"presentation_linecount" : 2,
+									"presentation_rect" : [ 43.0, 23.0, 237.0, 33.0 ],
+									"text" : "*note* please make sure you are signed in to GitHub first."
 								}
 
 							}
@@ -1492,7 +1493,7 @@
 									"patching_rect" : [ 407.0, 71.0, 150.0, 47.0 ],
 									"presentation" : 1,
 									"presentation_linecount" : 2,
-									"presentation_rect" : [ 36.0, 120.5, 217.0, 33.0 ],
+									"presentation_rect" : [ 43.0, 186.5, 217.0, 33.0 ],
 									"text" : "Write the body here  + hit 'Enter' (shift+enter to add newline to text)"
 								}
 
@@ -1506,7 +1507,7 @@
 									"numoutlets" : 0,
 									"patching_rect" : [ 392.0, 56.0, 150.0, 47.0 ],
 									"presentation" : 1,
-									"presentation_rect" : [ 36.0, 10.0, 308.0, 20.0 ],
+									"presentation_rect" : [ 43.0, 76.0, 308.0, 20.0 ],
 									"text" : "Enter title for bug/feature-request/question + hit 'Enter'"
 								}
 
@@ -1522,7 +1523,7 @@
 									"parameter_enable" : 0,
 									"patching_rect" : [ 467.0, 140.0, 100.0, 20.0 ],
 									"presentation" : 1,
-									"presentation_rect" : [ 369.0, 358.0, 175.0, 68.0 ],
+									"presentation_rect" : [ 376.0, 424.0, 175.0, 68.0 ],
 									"text" : "Send Issue",
 									"texton" : "Sending"
 								}
@@ -1548,7 +1549,7 @@
 									"numoutlets" : 0,
 									"patching_rect" : [ 495.0, 407.0, 100.0, 100.0 ],
 									"presentation" : 1,
-									"presentation_rect" : [ 369.0, 120.5, 235.0, 220.0 ]
+									"presentation_rect" : [ 376.0, 186.5, 235.0, 220.0 ]
 								}
 
 							}
@@ -1700,7 +1701,7 @@
 									"parameter_enable" : 0,
 									"patching_rect" : [ 269.0, 140.0, 174.0, 23.0 ],
 									"presentation" : 1,
-									"presentation_rect" : [ 36.0, 152.5, 308.0, 273.0 ],
+									"presentation_rect" : [ 43.0, 218.5, 308.0, 273.0 ],
 									"tabmode" : 0
 								}
 
@@ -1724,8 +1725,7 @@
 									"numinlets" : 2,
 									"numoutlets" : 1,
 									"outlettype" : [ "" ],
-									"patching_rect" : [ 146.0, 282.0, 50.0, 22.0 ],
-									"text" : "test"
+									"patching_rect" : [ 146.0, 282.0, 50.0, 22.0 ]
 								}
 
 							}
@@ -1788,7 +1788,7 @@
 									"parameter_enable" : 0,
 									"patching_rect" : [ 44.0, 140.0, 174.0, 23.0 ],
 									"presentation" : 1,
-									"presentation_rect" : [ 36.0, 32.0, 308.0, 66.0 ],
+									"presentation_rect" : [ 43.0, 98.0, 308.0, 66.0 ],
 									"tabmode" : 0
 								}
 
@@ -2332,7 +2332,7 @@
 													"presentation" : 1,
 													"presentation_linecount" : 16,
 													"presentation_rect" : [ 319.0, 67.5, 558.0, 326.0 ],
-													"text" : "\"ping: PING iperf.scottlinux.com (45.33.39.39): 56 data bytes\n64 bytes from 45.33.39.39: icmp_seq=0 ttl=50 time=68.984 ms\n\" \"ping: 64 bytes from 45.33.39.39: icmp_seq=1 ttl=50 time=68.610 ms\n\" \"ping: 64 bytes from 45.33.39.39: icmp_seq=2 ttl=50 time=68.631 ms\n\" \"ping: 64 bytes from 45.33.39.39: icmp_seq=3 ttl=50 time=68.723 ms\n\" \"ping: 64 bytes from 45.33.39.39: icmp_seq=4 ttl=50 time=68.960 ms\n\" \"ping: 64 bytes from 45.33.39.39: icmp_seq=5 ttl=50 time=68.744 ms\n\" \"ping: 64 bytes from 45.33.39.39: icmp_seq=6 ttl=50 time=68.860 ms\n\" \"ping: 64 bytes from 45.33.39.39: icmp_seq=7 ttl=50 time=68.873 ms\n\" \"ping: 64 bytes from 45.33.39.39: icmp_seq=8 ttl=50 time=68.944 ms\n\" \"ping: 64 bytes from 45.33.39.39: icmp_seq=9 ttl=50 time=68.838 ms\n\n--- iperf.scottlinux.com ping statistics ---\n10 packets transmitted, 10 packets received, 0.0% packet loss\nround-trip min/avg/max/stddev = 68.610/68.817/68.984/0.127 ms\n\" \"ping: child process exited with code 0\""
+													"text" : "\"ping: PING ping.online.net (62.210.18.40): 56 data bytes\n64 bytes from 62.210.18.40: icmp_seq=0 ttl=48 time=104.424 ms\n\" \"ping: 64 bytes from 62.210.18.40: icmp_seq=1 ttl=48 time=104.013 ms\n\" \"ping: 64 bytes from 62.210.18.40: icmp_seq=2 ttl=48 time=105.333 ms\n\" \"ping: 64 bytes from 62.210.18.40: icmp_seq=3 ttl=48 time=104.587 ms\n\" \"ping: 64 bytes from 62.210.18.40: icmp_seq=4 ttl=48 time=104.971 ms\n\" \"ping: 64 bytes from 62.210.18.40: icmp_seq=5 ttl=48 time=104.109 ms\n\" \"ping: 64 bytes from 62.210.18.40: icmp_seq=6 ttl=48 time=104.015 ms\n\" \"ping: 64 bytes from 62.210.18.40: icmp_seq=7 ttl=48 time=104.243 ms\n\" \"ping: 64 bytes from 62.210.18.40: icmp_seq=8 ttl=48 time=104.817 ms\n\" \"ping: 64 bytes from 62.210.18.40: icmp_seq=9 ttl=48 time=103.635 ms\n\n--- ping.online.net ping statistics ---\n10 packets transmitted, 10 packets received, 0.0% packet loss\nround-trip min/avg/max/stddev = 103.635/104.415/105.333/0.490 ms\n\" \"ping: child process exited with code 0\""
 												}
 
 											}
@@ -2357,7 +2357,7 @@
 													"numoutlets" : 1,
 													"outlettype" : [ "" ],
 													"patching_rect" : [ 1043.5, 1294.0, 166.0, 35.0 ],
-													"text" : "Fremont_CA dictionary u924005653"
+													"text" : "Paris_FR_2 dictionary u909015368"
 												}
 
 											}
@@ -2369,7 +2369,7 @@
 													"numoutlets" : 1,
 													"outlettype" : [ "" ],
 													"patching_rect" : [ 983.136363636363512, 1118.0, 115.0, 22.0 ],
-													"text" : "set Hamburg_GR_9"
+													"text" : "Paris_FR_2"
 												}
 
 											}
@@ -2407,7 +2407,7 @@
 													"numoutlets" : 1,
 													"outlettype" : [ "" ],
 													"patching_rect" : [ 1024.499999999999773, 1011.0, 96.0, 22.0 ],
-													"text" : "michaelpalumbo"
+													"text" : "Paris_FR_2"
 												}
 
 											}
@@ -2504,7 +2504,7 @@
 													"numoutlets" : 1,
 													"outlettype" : [ "" ],
 													"patching_rect" : [ 1421.299999999999955, 1003.0, 96.0, 22.0 ],
-													"text" : "michaelpalumbo"
+													"text" : "Paris_FR_2"
 												}
 
 											}
@@ -2579,7 +2579,7 @@
 													"numoutlets" : 1,
 													"outlettype" : [ "" ],
 													"patching_rect" : [ 1216.499999999999773, 1003.0, 96.0, 22.0 ],
-													"text" : "michaelpalumbo"
+													"text" : "Paris_FR_2"
 												}
 
 											}
@@ -6977,6 +6977,19 @@
 										"visible" : 1,
 										"boxes" : [ 											{
 												"box" : 												{
+													"id" : "obj-106",
+													"maxclass" : "comment",
+													"numinlets" : 1,
+													"numoutlets" : 0,
+													"patching_rect" : [ 574.0, 129.0, 150.0, 20.0 ],
+													"presentation" : 1,
+													"presentation_rect" : [ 568.0, 131.0, 150.0, 20.0 ],
+													"text" : "Test Results:"
+												}
+
+											}
+, 											{
+												"box" : 												{
 													"id" : "obj-104",
 													"maxclass" : "comment",
 													"numinlets" : 1,
@@ -7090,7 +7103,7 @@
 													"numoutlets" : 1,
 													"outlettype" : [ "" ],
 													"patching_rect" : [ 355.0, 365.0, 50.0, 62.0 ],
-													"text" : "dictionary u846012330"
+													"text" : "dictionary u667016252"
 												}
 
 											}
@@ -7101,7 +7114,8 @@
 													"numinlets" : 2,
 													"numoutlets" : 1,
 													"outlettype" : [ "" ],
-													"patching_rect" : [ 422.0, 313.0, 50.0, 22.0 ]
+													"patching_rect" : [ 422.0, 313.0, 50.0, 22.0 ],
+													"text" : "set 0"
 												}
 
 											}
@@ -7377,13 +7391,13 @@
 , 											{
 												"box" : 												{
 													"id" : "obj-50",
-													"linecount" : 4,
+													"linecount" : 3,
 													"maxclass" : "message",
 													"numinlets" : 2,
 													"numoutlets" : 1,
 													"outlettype" : [ "" ],
-													"patching_rect" : [ 791.0, 621.0, 50.0, 62.0 ],
-													"text" : "set dispersion_vader"
+													"patching_rect" : [ 791.0, 621.0, 50.0, 49.0 ],
+													"text" : "set Paris_FR_2"
 												}
 
 											}
@@ -7859,14 +7873,12 @@
 , 											{
 												"box" : 												{
 													"id" : "obj-171",
-													"linecount" : 2,
 													"maxclass" : "comment",
 													"numinlets" : 1,
 													"numoutlets" : 0,
-													"patching_rect" : [ 428.25, 883.5, 72.0, 33.0 ],
+													"patching_rect" : [ 428.25, 883.5, 72.0, 20.0 ],
 													"presentation" : 1,
-													"presentation_rect" : [ 568.0, 153.0, 333.0, 20.0 ],
-													"text" : "Test Results"
+													"presentation_rect" : [ 568.0, 153.0, 333.0, 20.0 ]
 												}
 
 											}

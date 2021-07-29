@@ -1,6 +1,7 @@
 # disperf
 
-
+*IMPORTANT* Disperf is a work in progress. If you encounter any problems, or have ideas for new features, please [open a new issue](https://dispersionlab.github.io/disperf/newIssue)
+	
 ## Menubar
 
 Disperf's features and settings can be accessed from its menubar. 

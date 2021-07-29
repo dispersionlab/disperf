@@ -1,5 +1,3 @@
-Return to [main page](https://dispersionlab.github.io/disperf/)
-
 # Testing
 
 Disperf can run several tests: Running iperf for bandwidth and QoS, and checking latency between peers. This page provides instructions for both modes. 
