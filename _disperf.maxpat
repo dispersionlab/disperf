@@ -1088,7 +1088,7 @@
 						}
 ,
 						"classnamespace" : "box",
-						"rect" : [ 2612.0, 1242.0, 1189.0, 820.0 ],
+						"rect" : [ 1905.0, 1033.0, 1195.0, 873.0 ],
 						"bglocked" : 0,
 						"openinpresentation" : 1,
 						"default_fontsize" : 12.0,
@@ -1119,12 +1119,76 @@
 						"visible" : 1,
 						"boxes" : [ 							{
 								"box" : 								{
+									"id" : "obj-24",
+									"maxclass" : "newobj",
+									"numinlets" : 1,
+									"numoutlets" : 1,
+									"outlettype" : [ "newIssue" ],
+									"patching_rect" : [ 191.166666666666686, 70.0, 66.0, 22.0 ],
+									"text" : "t newIssue"
+								}
+
+							}
+, 							{
+								"box" : 								{
+									"id" : "obj-23",
+									"maxclass" : "newobj",
+									"numinlets" : 1,
+									"numoutlets" : 1,
+									"outlettype" : [ "README" ],
+									"patching_rect" : [ 113.5, 70.0, 67.0, 22.0 ],
+									"text" : "t README"
+								}
+
+							}
+, 							{
+								"box" : 								{
+									"id" : "obj-22",
+									"maxclass" : "newobj",
+									"numinlets" : 4,
+									"numoutlets" : 4,
+									"outlettype" : [ "bang", "bang", "bang", "" ],
+									"patching_rect" : [ 113.5, 38.0, 252.0, 22.0 ],
+									"text" : "select home \"request a feature\" \"report a bug\""
+								}
+
+							}
+, 							{
+								"box" : 								{
+									"id" : "obj-21",
+									"items" : [ "home", ",", "install", ",", "report", "a", "bug", ",", "request", "a", "feature", ",", "testing", ",", "production" ],
+									"maxclass" : "umenu",
+									"numinlets" : 1,
+									"numoutlets" : 3,
+									"outlettype" : [ "int", "", "" ],
+									"parameter_enable" : 0,
+									"patching_rect" : [ 73.0, -2.0, 100.0, 22.0 ],
+									"presentation" : 1,
+									"presentation_rect" : [ 6.0, 30.0, 154.0, 22.0 ]
+								}
+
+							}
+, 							{
+								"box" : 								{
+									"id" : "obj-20",
+									"maxclass" : "comment",
+									"numinlets" : 1,
+									"numoutlets" : 0,
+									"patching_rect" : [ 73.0, -28.0, 97.0, 20.0 ],
+									"presentation" : 1,
+									"presentation_rect" : [ 6.0, 5.0, 150.0, 20.0 ],
+									"text" : "Navigation"
+								}
+
+							}
+, 							{
+								"box" : 								{
 									"id" : "obj-18",
 									"maxclass" : "newobj",
 									"numinlets" : 1,
 									"numoutlets" : 2,
 									"outlettype" : [ "", "front" ],
-									"patching_rect" : [ 456.0, 93.0, 311.0, 22.0 ],
+									"patching_rect" : [ 396.0, 103.9005126953125, 311.0, 22.0 ],
 									"text" : "t s front"
 								}
 
@@ -1136,7 +1200,7 @@
 									"numinlets" : 1,
 									"numoutlets" : 1,
 									"outlettype" : [ "" ],
-									"patching_rect" : [ 456.0, 126.0, 259.0, 22.0 ],
+									"patching_rect" : [ 396.0, 179.0, 259.0, 22.0 ],
 									"text" : "sprintf https://dispersionlab.github.io/disperf/%s"
 								}
 
@@ -1148,7 +1212,7 @@
 									"numinlets" : 1,
 									"numoutlets" : 1,
 									"outlettype" : [ "" ],
-									"patching_rect" : [ 456.0, 167.0, 80.0, 22.0 ],
+									"patching_rect" : [ 396.0, 220.0, 80.0, 22.0 ],
 									"text" : "prepend read"
 								}
 
@@ -1160,7 +1224,7 @@
 									"numinlets" : 0,
 									"numoutlets" : 1,
 									"outlettype" : [ "" ],
-									"patching_rect" : [ 456.0, 55.0, 141.0, 22.0 ],
+									"patching_rect" : [ 396.0, 65.9005126953125, 141.0, 22.0 ],
 									"text" : "receive loadManualPage"
 								}
 
@@ -1171,7 +1235,7 @@
 									"maxclass" : "comment",
 									"numinlets" : 1,
 									"numoutlets" : 0,
-									"patching_rect" : [ 134.0, 66.0, 150.0, 20.0 ],
+									"patching_rect" : [ 74.0, 152.0, 150.0, 20.0 ],
 									"text" : "<<< just for dev"
 								}
 
@@ -1184,7 +1248,7 @@
 									"numoutlets" : 1,
 									"outlettype" : [ "int" ],
 									"parameter_enable" : 0,
-									"patching_rect" : [ 108.0, 66.0, 24.0, 24.0 ]
+									"patching_rect" : [ 48.0, 152.0, 24.0, 24.0 ]
 								}
 
 							}
@@ -1195,7 +1259,7 @@
 									"numinlets" : 2,
 									"numoutlets" : 1,
 									"outlettype" : [ "" ],
-									"patching_rect" : [ 108.0, 142.0, 50.0, 22.0 ],
+									"patching_rect" : [ 48.0, 228.0, 50.0, 22.0 ],
 									"text" : "reload"
 								}
 
@@ -1207,7 +1271,7 @@
 									"numinlets" : 2,
 									"numoutlets" : 1,
 									"outlettype" : [ "bang" ],
-									"patching_rect" : [ 108.0, 108.0, 100.0, 22.0 ],
+									"patching_rect" : [ 48.0, 194.0, 100.0, 22.0 ],
 									"text" : "metro 1000"
 								}
 
@@ -1219,7 +1283,7 @@
 									"numinlets" : 2,
 									"numoutlets" : 2,
 									"outlettype" : [ "", "" ],
-									"patching_rect" : [ 805.0, 88.0, 105.0, 22.0 ],
+									"patching_rect" : [ 745.0, 141.0, 105.0, 22.0 ],
 									"text" : "route openManual"
 								}
 
@@ -1232,7 +1296,7 @@
 									"numinlets" : 0,
 									"numoutlets" : 1,
 									"outlettype" : [ "" ],
-									"patching_rect" : [ 805.0, 50.9005126953125, 109.0, 22.0 ],
+									"patching_rect" : [ 745.0, 103.9005126953125, 109.0, 22.0 ],
 									"text" : "receive showPatch"
 								}
 
@@ -1244,7 +1308,7 @@
 									"numinlets" : 1,
 									"numoutlets" : 2,
 									"outlettype" : [ "", "" ],
-									"patching_rect" : [ 805.0, 167.0, 67.0, 22.0 ],
+									"patching_rect" : [ 745.0, 220.0, 67.0, 22.0 ],
 									"save" : [ "#N", "thispatcher", ";", "#Q", "end", ";" ],
 									"text" : "thispatcher"
 								}
@@ -1257,7 +1321,7 @@
 									"numinlets" : 1,
 									"numoutlets" : 1,
 									"outlettype" : [ "front" ],
-									"patching_rect" : [ 805.0, 120.0, 39.0, 22.0 ],
+									"patching_rect" : [ 745.0, 173.0, 39.0, 22.0 ],
 									"text" : "t front"
 								}
 
@@ -1269,11 +1333,11 @@
 									"numinlets" : 1,
 									"numoutlets" : 1,
 									"outlettype" : [ "" ],
-									"patching_rect" : [ 108.0, 222.0, 647.0, 480.0 ],
+									"patching_rect" : [ 48.0, 275.0, 647.0, 480.0 ],
 									"presentation" : 1,
-									"presentation_rect" : [ 7.0, 3.0, 1175.0, 808.0 ],
+									"presentation_rect" : [ 6.0, 58.0, 1175.0, 808.0 ],
 									"rendermode" : 1,
-									"url" : "https://dispersionlab.github.io/disperf/testing"
+									"url" : "https://dispersionlab.github.io/disperf/install"
 								}
 
 							}
@@ -1288,7 +1352,7 @@
 , 							{
 								"patchline" : 								{
 									"destination" : [ "obj-15", 0 ],
-									"midpoints" : [ 465.5, 211.5, 117.5, 211.5 ],
+									"midpoints" : [ 405.5, 264.5, 57.5, 264.5 ],
 									"source" : [ "obj-13", 0 ]
 								}
 
@@ -1310,7 +1374,7 @@
 , 							{
 								"patchline" : 								{
 									"destination" : [ "obj-7", 0 ],
-									"midpoints" : [ 757.5, 154.0, 814.5, 154.0 ],
+									"midpoints" : [ 697.5, 207.0, 754.5, 207.0 ],
 									"source" : [ "obj-18", 1 ]
 								}
 
@@ -1319,6 +1383,59 @@
 								"patchline" : 								{
 									"destination" : [ "obj-5", 0 ],
 									"source" : [ "obj-2", 0 ]
+								}
+
+							}
+, 							{
+								"patchline" : 								{
+									"destination" : [ "obj-22", 0 ],
+									"source" : [ "obj-21", 1 ]
+								}
+
+							}
+, 							{
+								"patchline" : 								{
+									"destination" : [ "obj-14", 0 ],
+									"midpoints" : [ 356.0, 170.5, 405.5, 170.5 ],
+									"source" : [ "obj-22", 3 ]
+								}
+
+							}
+, 							{
+								"patchline" : 								{
+									"destination" : [ "obj-23", 0 ],
+									"source" : [ "obj-22", 0 ]
+								}
+
+							}
+, 							{
+								"patchline" : 								{
+									"destination" : [ "obj-24", 0 ],
+									"midpoints" : [ 278.333333333333371, 64.5, 200.666666666666686, 64.5 ],
+									"source" : [ "obj-22", 2 ]
+								}
+
+							}
+, 							{
+								"patchline" : 								{
+									"destination" : [ "obj-24", 0 ],
+									"source" : [ "obj-22", 1 ]
+								}
+
+							}
+, 							{
+								"patchline" : 								{
+									"destination" : [ "obj-14", 0 ],
+									"midpoints" : [ 123.0, 135.0, 405.5, 135.0 ],
+									"source" : [ "obj-23", 0 ]
+								}
+
+							}
+, 							{
+								"patchline" : 								{
+									"destination" : [ "obj-14", 0 ],
+									"midpoints" : [ 200.666666666666686, 135.0, 405.5, 135.0 ],
+									"source" : [ "obj-24", 0 ]
 								}
 
 							}
@@ -1417,7 +1534,6 @@
 						"style" : "",
 						"subpatcher_template" : "",
 						"assistshowspatchername" : 0,
-						"visible" : 1,
 						"boxes" : [ 							{
 								"box" : 								{
 									"id" : "obj-43",
@@ -7103,7 +7219,7 @@
 													"numoutlets" : 1,
 													"outlettype" : [ "" ],
 													"patching_rect" : [ 355.0, 365.0, 50.0, 62.0 ],
-													"text" : "dictionary u667016252"
+													"text" : "dictionary u443020232"
 												}
 
 											}
