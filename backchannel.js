@@ -2,9 +2,7 @@ const webSocket = require('ws');
 const ip = require('ip');
 const username = require('username')
 const max = require('max-api');
-const { exec, execSync, spawn } = require('child_process')
 const rws = require('reconnecting-websocket');
-const express = require('express')
 const _ = require('lodash')
 const isReachable = require('is-reachable');
 
@@ -27,22 +25,10 @@ const rwsOptions = {
 
 process.env.PATH = [process.env.PATH, "/usr/local/bin"].join(":");
 // max.post(__dirname, process.env.PATH, '\n')
-// console_jackdmp === 1
-
-// don't delete, just keeping this here for the 2.0 version!
-// var graphs = express();
-// graphs.use(express.static('graphs'));
-// graphs.listen(3000, function () {
-// });
-// on load, reset local graphs!
-// max.outlet('graphs', 'all', 'resetGraph')
 
 // ping the broker host every 30 seconds to verify its still online
-
 max.addHandler('brokerStatus',()=>{
   (async () => {
-    // console.log();
-    //=> true
       max.outlet('brokerStatus',await isReachable(brokerHost,{timeout: 20000}))
   })();
 })
@@ -69,24 +55,16 @@ wsConnect()
 
 
 setInterval(function runStatus(){
-    max.outlet('node.script_active')
-  
-  }, 2000);
-/*
-ws.addEventListener('close', (code, reason) =>{
-  max.post(code, reason)
-  wsStatus = 0
-  // wsConnect()
-  max.post('websocket client: ', code, reason)
-});
-*/
+  max.outlet('node.script_active')
+
+}, 2000);
+
 
 
 ws.addEventListener('open', () =>{
-  max.post('websocket client opened')
-
-
+  max.post('disperf ws client opened')
   wsStatus = 1
+  // send thisMachine's name and ip to broker
   let thisClient = JSON.stringify({
     cmd: 'newClient',
     data: 
@@ -96,38 +74,27 @@ ws.addEventListener('open', () =>{
       },
     date: Date.now() 
   })
-
-  // send message to discord stating telematic patch is connected
-  // this is now handled by the broker only!
-  // discord(thisMachine + ' has joined the disperf network')
   ws.send(thisClient);
-  //process.exit()
 });
 
 
 ws.addEventListener('message', (data) =>{
-  
   msg = JSON.parse(data.data)
   cmd = msg.cmd
-    //////////// filter messages for just this peer:
+  // filter messages for just this peer:
   if(msg.target === thisMachine){
-    
     switch(cmd){
-
+      // messages from the broker
       case 'serverMsg':
-        // max.post(msg.data)
         max.outlet('serverMsg', msg.data)
       break;
 
       case 'startService':
-        // max.post(msg.service, msg.options, msg.target)
-        // route service reuests
-
+        // route service requests from a peer
         let routing = msg.service + '_' + msg.options 
         max.outlet('startService', routing, 1)
-        // max.post('startService', routing, 1)
-        
       break
+      // this should only trigger if a dev version of this script isn't complete... 
       default:
         max.post('unhandled server message targeted @ ' + thisMachine)
     }
@@ -135,6 +102,7 @@ ws.addEventListener('message', (data) =>{
     //////////// these are messages broadcast to all clients
     switch (cmd){
       // update the local graphs
+      //! note that the graph is not included in this version
       // case 'addNode':
       // case 'removeNode':
       //   max.outlet('graphs', 'connections', cmd, msg.data)
@@ -154,49 +122,28 @@ ws.addEventListener('message', (data) =>{
       break
       case 'network':
         // display the total network state in dict.view
-        // first check that incoming network data isn't redundant:
-        
-
-
-        // this function will return true after 1 second (see the async keyword in front of function)
+        // first check that incoming network data isn't redundant. this function will return true after 1 second (see the async keyword in front of function)
         async function checkRedundancy() {
-          
           // create a new promise inside of the async function
           let promise = new Promise((resolve, reject) => {
             resolve(_.isEqual(networkData, msg.data))
             networkData = msg.data
           });
-          
           // wait for the promise to resolve
           redundancyCheck = await promise;
-          
-          // console log the result (true)
-          // max.post('check', redundancyCheck);
-
-          if (redundancyCheck > 0){
-            
-          } else {
-            //max.outlet('graphs', 'all', 'resetGraph')
+          if (redundancyCheck > 0){} else {
             updateLocal()
           }
-     
         }
-
-        // call the function
+        // check for redundancy
         checkRedundancy();
 
-        function updateLocal(){
-            
-            // max.post(msg.data)
-            
-            max.outlet('network', networkData)
-          
-            // don't delete this, but its just not being implemented for the 1.0 version
+        function updateLocal(){ 
+            // max.post(msg.data) 
+            max.outlet('network', networkData) 
+            //! don't delete this, but its just not being implemented for the 1.0 version
             // graphData = msg.data
             // setGraph(graphData)
-            
-            
-          
             //max.outlet('networkTree', JSON.stringify(msg.data))
             // and, for the eventual interactive network tree running at localhost:3000/index.html
             // write it to temp.json
@@ -225,25 +172,18 @@ ws.addEventListener('message', (data) =>{
             //   }
             //   // update peerCount after
             //   peerCount = msg.data.peers
-            // }
-          }
-
-        
-
-        
+            //! }
+          }        
       break;
       case 'id':
         max.outlet('id', msg.data)
       break;
+      // this should only trigger if a dev version of this script isn't complete... 
       default:
         max.post('\n\nFor developer: unhandled message from remote broker: ', msg)
       break
-
     }
-       
   }
- 
-
 });
 
 function sendToBroker(msg){
@@ -254,7 +194,6 @@ function sendToBroker(msg){
   }
 }
 
-
 // check process statuses:
 max.addHandler('pStats', (pStats) => {
   pStats = pStats
@@ -263,24 +202,19 @@ max.addHandler('pStats', (pStats) => {
     data: pStats,
     date: Date.now()
   })
-  
-  // ws.send(jackStatus);
   sendToBroker(m)
-
 })  
-
 
 // an efficient way to send service status updates
 max.addHandler('serviceStatus', (service, mode, status)=>{
   max.post("serviceStatus", service, mode, status)
 
-  foo = JSON.stringify({
+  serviceStatus = JSON.stringify({
     cmd: 'serviceStatus',
     data: [service, mode, status],
     date: Date.now()
   })  
-  // ws.send(foo);
-  sendToBroker(foo)
+  sendToBroker(serviceStatus)
 })
 
 max.addHandler('iperf3_server', (status) => {
@@ -295,7 +229,6 @@ max.addHandler('iperf3_server', (status) => {
   //     // ws.send(foo);
   //     sendToBroker(foo)
   //   break;
-
   //   case 1:
   //     foo = JSON.stringify({
   //       cmd: 'iperf3_server',
@@ -304,11 +237,8 @@ max.addHandler('iperf3_server', (status) => {
   //     }) 
   //     // ws.send(foo); 
   //     sendToBroker(foo)
-
   //   break;
   // }
-
-  
 })
 
 max.addHandler('JTServers', (dictionary) => {
@@ -347,8 +277,6 @@ max.addHandler('JTServers', (dictionary) => {
   //     ws.send(foo); 
   //   break;
   // }
-
-  
 })
 
 // this is a crucial function of this script:::
@@ -464,11 +392,3 @@ max.addHandler('localPatches', (localPatches) => {
   sendToBroker(outMsg)
 
 })
-
-///////////////////// chat window:
-// don't delete this. its just commented out for the 1.0 version
-// max.addHandler('clearChatHistory', () =>{
-//   ws.send(JSON.stringify({
-//     cmd:'clearChatHistory'
-//   }))
-// })
