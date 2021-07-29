@@ -12,4 +12,8 @@ For more details on each of the menubar items, select the corresponding link bel
 
 [Audio](https://dispersionlab.github.io/disperf/audio)
 
+[System](https://dispersionlab.github.io/disperf/system)
+
+[Developer](https://dispersionlab.github.io/disperf/developer)
+
 [Production](https://dispersionlab.github.io/disperf/production)

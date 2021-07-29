@@ -1119,6 +1119,18 @@
 						"visible" : 1,
 						"boxes" : [ 							{
 								"box" : 								{
+									"id" : "obj-26",
+									"maxclass" : "newobj",
+									"numinlets" : 1,
+									"numoutlets" : 1,
+									"outlettype" : [ "" ],
+									"patching_rect" : [ 113.5, 10.0, 57.0, 22.0 ],
+									"text" : "tosymbol"
+								}
+
+							}
+, 							{
+								"box" : 								{
 									"id" : "obj-24",
 									"maxclass" : "newobj",
 									"numinlets" : 1,
@@ -1162,7 +1174,7 @@
 									"numoutlets" : 3,
 									"outlettype" : [ "int", "", "" ],
 									"parameter_enable" : 0,
-									"patching_rect" : [ 73.0, -2.0, 100.0, 22.0 ],
+									"patching_rect" : [ 73.0, -17.0, 100.0, 22.0 ],
 									"presentation" : 1,
 									"presentation_rect" : [ 6.0, 30.0, 154.0, 22.0 ]
 								}
@@ -1174,7 +1186,7 @@
 									"maxclass" : "comment",
 									"numinlets" : 1,
 									"numoutlets" : 0,
-									"patching_rect" : [ 73.0, -28.0, 97.0, 20.0 ],
+									"patching_rect" : [ 69.5, -17.0, 97.0, 20.0 ],
 									"presentation" : 1,
 									"presentation_rect" : [ 6.0, 5.0, 150.0, 20.0 ],
 									"text" : "Navigation"
@@ -1337,7 +1349,7 @@
 									"presentation" : 1,
 									"presentation_rect" : [ 6.0, 58.0, 1175.0, 808.0 ],
 									"rendermode" : 1,
-									"url" : "https://dispersionlab.github.io/disperf/production"
+									"url" : "https://dispersionlab.github.io/disperf/developer"
 								}
 
 							}
@@ -1388,7 +1400,7 @@
 							}
 , 							{
 								"patchline" : 								{
-									"destination" : [ "obj-22", 0 ],
+									"destination" : [ "obj-26", 0 ],
 									"source" : [ "obj-21", 1 ]
 								}
 
@@ -1436,6 +1448,13 @@
 									"destination" : [ "obj-14", 0 ],
 									"midpoints" : [ 200.666666666666686, 135.0, 418.5, 135.0 ],
 									"source" : [ "obj-24", 0 ]
+								}
+
+							}
+, 							{
+								"patchline" : 								{
+									"destination" : [ "obj-22", 0 ],
+									"source" : [ "obj-26", 0 ]
 								}
 
 							}
@@ -2252,6 +2271,7 @@
 						"style" : "",
 						"subpatcher_template" : "",
 						"assistshowspatchername" : 0,
+						"visible" : 1,
 						"boxes" : [ 							{
 								"box" : 								{
 									"id" : "obj-21",
@@ -4928,7 +4948,7 @@
 									"maxclass" : "newobj",
 									"numinlets" : 1,
 									"numoutlets" : 0,
-									"patching_rect" : [ 472.0, 341.567138671875, 129.0, 22.0 ],
+									"patching_rect" : [ 669.5, 317.567138671875, 129.0, 22.0 ],
 									"text" : "send toTelematicScript"
 								}
 
@@ -5168,7 +5188,7 @@
 									"numinlets" : 2,
 									"numoutlets" : 1,
 									"outlettype" : [ "" ],
-									"patching_rect" : [ 472.0, 309.0, 64.0, 22.0 ],
+									"patching_rect" : [ 669.5, 285.0, 64.0, 22.0 ],
 									"text" : "script start"
 								}
 
@@ -7217,7 +7237,7 @@
 													"numoutlets" : 1,
 													"outlettype" : [ "" ],
 													"patching_rect" : [ 355.0, 365.0, 50.0, 62.0 ],
-													"text" : "dictionary u443020232"
+													"text" : "dictionary u537024052"
 												}
 
 											}
@@ -10034,7 +10054,7 @@
 									"numoutlets" : 10,
 									"outlettype" : [ "int", "int", "int", "int", "int", "int", "int", "int", "int", "int" ],
 									"patching_rect" : [ 313.0, 236.567138671875, 113.5, 23.0 ],
-									"save" : [ "#N", "menubar", 10, 0, ";", "#X", "about", "Telematic…", ";", "#X", "closeitem", ";", "#X", "menutitle", 5, "Testing", ";", "#X", "item", 5, 1, "Disperf...", ";", "#X", "item", 5, 2, "Latency", ";", "#X", "menutitle", 6, "Audio", ";", "#X", "item", 6, 1, "Max/MSP", "Audio", "Setup", ";", "#X", "item", 6, 2, "OSX", "Audio", "MIDI", "Setup", ";", "#X", "item", 6, 3, "OSX", "Audio", "Preferences", ";", "#X", "item", 6, 4, "-", ";", "#X", "item", 6, 5, "Open", "Jack", "Pilot", ";", "#X", "item", 6, 6, "Open", "qjackctl", ";", "#X", "item", 6, 7, "Host", "a", "New", "JackTrip", "Server", ";", "#X", "item", 6, 8, "Connect", "to", "a", "JackTrip", "Server", ";", "#X", "item", 6, 9, "Kill", "all", "JackTrip", "sessions", ";", "#X", "item", 6, 10, "-", ";", "#X", "item", 6, 11, "WebRTC", "p2p", "(planned)", ";", "#X", "item", 6, 12, "IceCast", "(planned)", ";", "#X", "menutitle", 7, "System", ";", "#X", "item", 7, 1, "Connect", "to", "Broker", ";", "#X", "item", 7, 2, "-", ";", "#X", "item", 7, 3, "Restart", "System", ";", "#X", "menutitle", 8, "Reference", ";", "#X", "item", 8, 1, "Guide", ";", "#X", "item", 8, 2, "-", ";", "#X", "item", 8, 3, "Report", "bug", "or", "request", "feature", ";", "#X", "menutitle", 9, "Developer", ";", "#X", "item", 9, 1, "Toggle", "Menubar", ";", "#X", "item", 9, 2, "Broker", "(local)", ";", "#X", "item", 9, 3, "Broker", "(Vader)", ";", "#X", "item", 9, 4, "Broker", "(custom", "IP)", ";", "#X", "item", 9, 5, "Restart", "Broker", ";", "#X", "menutitle", 10, "Production", ";", "#X", "item", 10, 1, "Notes", ";", "#X", "item", 10, 2, "Chat", ";", "#X", "end", ";" ],
+									"save" : [ "#N", "menubar", 10, 0, ";", "#X", "about", "Telematic…", ";", "#X", "closeitem", ";", "#X", "menutitle", 5, "Testing", ";", "#X", "item", 5, 1, "Disperf...", ";", "#X", "item", 5, 2, "Latency", ";", "#X", "menutitle", 6, "Audio", ";", "#X", "item", 6, 1, "Max/MSP", "Audio", "Setup", ";", "#X", "item", 6, 2, "OSX", "Audio", "MIDI", "Setup", ";", "#X", "item", 6, 3, "OSX", "Audio", "Preferences", ";", "#X", "item", 6, 4, "-", ";", "#X", "item", 6, 5, "Open", "Jack", "Pilot", ";", "#X", "item", 6, 6, "Open", "qjackctl", ";", "#X", "item", 6, 7, "Host", "a", "New", "JackTrip", "Server", ";", "#X", "item", 6, 8, "Connect", "to", "a", "JackTrip", "Server", ";", "#X", "item", 6, 9, "Kill", "all", "JackTrip", "sessions", ";", "#X", "item", 6, 10, "-", ";", "#X", "item", 6, 11, "WebRTC", "p2p", "(planned)", ";", "#X", "item", 6, 12, "IceCast", "(planned)", ";", "#X", "menutitle", 7, "System", ";", "#X", "item", 7, 1, "Connect", "to", "Broker", ";", "#X", "item", 7, 2, "-", ";", "#X", "item", 7, 3, "Restart", "Disperf", ";", "#X", "menutitle", 8, "Reference", ";", "#X", "item", 8, 1, "Guide", ";", "#X", "item", 8, 2, "-", ";", "#X", "item", 8, 3, "Report", "bug", "or", "request", "feature", ";", "#X", "menutitle", 9, "Developer", ";", "#X", "item", 9, 1, "Toggle", "Menubar", ";", "#X", "item", 9, 2, "Broker", "(local)", ";", "#X", "item", 9, 3, "Broker", "(Vader)", ";", "#X", "item", 9, 4, "Broker", "(custom", "IP)", ";", "#X", "item", 9, 5, "Restart", "Broker", ";", "#X", "menutitle", 10, "Production", ";", "#X", "item", 10, 1, "Notes", ";", "#X", "item", 10, 2, "Chat", ";", "#X", "end", ";" ],
 									"text" : "menubar 10"
 								}
 
