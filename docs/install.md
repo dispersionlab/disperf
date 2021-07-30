@@ -6,7 +6,7 @@ Requirements:
 - Max/MSP 8
 
 
-You can download Disperf as a release package [from here](
+You can download Disperf as a release package [from here](https://github.com/dispersionlab/disperf/releases)
 
 Or you can clone it from our repository: ```git clone https://github.com/dispersionlab/disperf```
 
