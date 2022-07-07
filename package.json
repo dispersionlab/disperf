@@ -27,7 +27,7 @@
     "is-reachable": "^4.0.0",
     "jest": "^26.0.1",
     "lodash": "^4.17.15",
-    "moment": "^2.26.0",
+    "moment": "^2.29.4",
     "new-github-issue-url": "^0.2.1",
     "opn": "^6.0.0",
     "path": "^0.12.7",
